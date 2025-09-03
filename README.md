@@ -7,7 +7,6 @@ And htmx to load partials
 <main data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.main.partial.html"></main>
 ```
 
-
 ```js
 function init() {
     import('...js');
