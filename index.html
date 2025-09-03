@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Decor</title>
-    <link rel="shortcut icon" href="img/global/favicon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="img/global/favicon.png"
+      type="image/x-icon"
+    />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -24,7 +28,13 @@
         data-hx-get="index.header-hero.partial.html"
       ></div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.clients.partial.html"
+      ></section>
+    </main>
     <footer
       class="footer"
       data-hx-trigger="load"
